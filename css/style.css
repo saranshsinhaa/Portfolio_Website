@@ -1,0 +1,249 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+
+}
+
+:root {
+    --ff-primary: 'Irish Grover', cursive ;
+    --clr-bg1: #78706F;
+    --clr-bg2: #6ACDD6;
+
+    --fs-h1: 4.5rem;
+    --fs-h2: 3.75rem;
+    --fs-h3: 1.5rem;
+    --fs-body: 1.125rem;
+    
+    --fw-reg: 200;
+    --fw-bold: 800;
+
+    --clr-t1: #F56D81;
+    --clr-t2: #5A5959;
+    --clr-t3: #fcbbf9;
+
+}
+
+
+/*--------------Global Styles--------------------------*/
+
+
+.strong{
+    font-weight: var(--fw-bold);
+}
+
+section{
+    padding: 5em 2em;
+}
+
+body{
+
+    background: var(--clr-bg1);
+    margin: 0;
+    font-family: var(--ff-primary);
+    font-size: var(--fs-body);
+    font-weight: var(--fw-reg);
+    line-height: 1.6;
+    
+
+}
+
+h1,
+h2,
+h3{
+    line-height: 1;
+    margin: 0;
+}
+
+h1{
+    font-size: var(--fs-h1)
+}
+h2{
+    font-size: var(--fs-h2)
+}
+h3{
+    font-size: var(--fs-h3)
+}
+
+.section__title{
+    margin-bottom: 0.25em;
+    font-weight: var(--fw-reg);
+    color: var(--clr-t1);
+    
+
+}
+
+.section__subtitle{
+    margin: 0;
+    font-size: var(--fs-h3);
+    color: var(--clr-t3);
+
+}
+
+
+
+/*------sectional styles------*/
+
+/*------------Top----------*/
+
+
+.top{
+   
+    position: fixed;
+    background-image: url(../Images/gradient\ top.jpg);
+    background-size: cover;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 17.75em;
+}
+
+.menu__list{
+    
+    
+    font-size: var(--fs-h3);
+    font-weight: var(--fw-bold);
+    transition: 500ms cubic-bezier(.5,0,.5,0),
+    opacity 200ms linear;
+}
+
+.menu__list:hover{
+    transform: scale(1.5,1.5);
+    opacity: 0.75;
+}
+
+.menu__link{
+    text-decoration: none;
+    color: var(--clr-t1);
+    text-align: center;
+}
+
+/*------------home-----------*/
+
+.section__title--home{
+    text-align: center;
+}
+
+.home{
+    background-image: url(../Images/section1bg.jpg);
+    background-size: cover;
+    
+    margin-left: 3em;
+    margin-right: 3em;
+    margin-bottom: 5em;
+}
+
+.section__title--home strong{
+    
+    display: block;
+    letter-spacing: 0.15em;
+
+}
+
+.home__img{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 50%;
+    
+}
+
+.section__subtitle--home{
+    background: var(--clr-bg2);
+    color: var(--clr-t2);
+    display: block;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+/*------------about----------*/
+
+.about{
+    background-image: url(../Images/section2bg.jpg);
+    
+    background-size: cover;
+    
+    margin-left: 3em;
+    margin-right: 3em;
+    margin-bottom: 5em;
+}
+
+.section__title--about{
+    text-align: center;
+}
+
+.section__subtitle--about{
+    
+    margin-bottom: 1em;
+    text-align: left;
+}
+
+/*---------------socials----------*/
+
+.socials{
+    background-image: url(../Images/section3bg.jpg);
+    background-size: cover;
+    margin-left: 3em;
+    margin-right: 3em;
+    margin-bottom: 5em;
+    display: grid;
+}
+
+.section__title--socials{
+    text-align: center;
+}
+
+.socials__list{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-left: auto;
+    margin-right: auto;
+    grid-gap: 2em;
+    
+    
+    margin-top: 3em;
+
+}
+
+.socials__list--img{
+    transition: 
+        transform 750ms cubic-bezier(.5,0,.5,0),
+        opacity 250ms linear;
+        
+}
+
+.socials__list--img:hover{
+    transform: scale(2,2);
+    opacity: 0.75;
+}
+
+/*------ Contact-----*/
+
+.contact{
+    display: block;
+    background-image: url(../Images/bottom.png);
+    background-size: cover;
+    text-align: center;
+    margin-left: 3em;
+    margin-right: 3em;
+    margin-bottom: 5em;
+}
+
+.contact__link{
+    text-decoration: none;
+    color: var(--clr-t1);
+    font-size: var(--fs-h2);
+}
+  
+
+
+
+
+
+
+
+
