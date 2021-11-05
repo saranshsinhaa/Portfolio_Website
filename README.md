@@ -11,4 +11,4 @@ All the critiques and suggestions are always welcomed.
 
 Reach me out at: https://www.instagram.com/wraithtoo/
 
-Project hosted on: https://wraith17.github.io/Portfolio_Website/
+Project hosted at: https://wraith17.github.io/Portfolio_Website/
